@@ -8,7 +8,7 @@ OpenCVやmatplotlibなど開発に便利なライブラリも同時にインス�
 
 https://www.continuum.io/downloads
 
-* WindowsのPowershell もしくは　コマンドプロンプト　から以下のコードを実行してください。（本チュートリアルではAIR-Tutorialという名前の環境を作成します）
+* WindowsのPowershell、もしくはコマンドプロンプトから以下のコードを実行してください。（本チュートリアルではAIR-Tutorialという名前の環境を作成します）
 
 ```
 conda create -n AIR-Tutorial python=3.5
@@ -20,13 +20,13 @@ conda create -n AIR-Tutorial python=3.5
 conda info -e
 ```
 
-作成した環境に入りましょう！以下のコードを実行してください
+作成した環境を起動しましょう！以下のコードを実行してください。
 
 ```
 activate AIR-Tutorial
 ```
 
-左側に（AIR-Tutorial）と出てくれば、環境にを起動できています。この環境にライブラリをインストールしていましょう。以下のコードを入力してください。
+左側に（AIR-Tutorial）と出てくれば、環境を起動できています。この環境にライブラリをインストールしていきましょう。以下のコードを入力してください。
 
 ```
 pip install tensorflow
