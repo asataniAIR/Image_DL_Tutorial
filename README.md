@@ -33,10 +33,11 @@ pip install tensorflow
 conda install -c https://conda.anaconda.org/menpo opencv3
 conda install scipy
 conda install h5py
+pip install matplotlib
 pip install keras 
 ```
 
-上記コードで、tensorflow,opencv,scipy,h5py,kerasがインストールできました。チュートリアルを開始しましょう！
+上記コードで、tensorflow,opencv,scipy,h5py,matplotlib,kerasがインストールできました。チュートリアルを開始しましょう！
 
 
 ## Windows(GPUも活用する場合:NVIDIAのGPUを想定しています）・・・作成中
