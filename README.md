@@ -40,7 +40,7 @@ pip install keras
 上記コードで、tensorflow,opencv,scipy,h5py,matplotlib,kerasがインストールできました。チュートリアルを開始しましょう！
 
 
-## Windows(GPUも活用する場合:NVIDIAのGPUを想定しています）・・・作成中
+## Windows(GPUも活用する場合:NVIDIAのGPUを想定しています）
 
 * Anacondaを用いて、開発環境を作成します。以下のURLからWindows向けPython３の最新パッケージをインストールしてください。
 
@@ -90,8 +90,18 @@ python　　#pythonを起動してください
 >>>import keras 　　　　#kerasをimportします
 ```
 
+以下が表示されればGPUを起動できています。
 
-
+```
+Using TensorFlow backend.
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:135] successfully opened CUDA library cublas64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:135] successfully opened CUDA library cudnn64_5.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:135] successfully opened CUDA library cufft64_80.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:135] successfully opened CUDA library nvcuda.dll locally
+I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stream_executor\dso_loader.cc:135] successfully opened CUDA library curand64_80.dll locally
+>>>
+```
+それでは、チュートリアルを開始しましょう！
 
 
 ## Mac・・・作成中
