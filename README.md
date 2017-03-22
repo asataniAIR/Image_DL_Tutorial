@@ -104,5 +104,98 @@ I c:\tf_jenkins\home\workspace\release-win\device\gpu\os\windows\tensorflow\stre
 それでは、チュートリアルを開始しましょう！
 
 
-## Mac・・・作成中
+## Mac
+- Homebrewがインストール済みか確認しましょう。
+
+```
+brew --version  
+```
+Homebrew 1.1.10などと表示されたらインストール済みです。
+
+- インストールされていなかった場合は、以下のコマンドでインストールできます。
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+- Homebrew環境をアップデートしてpyenvをインストールしましょう。
+
+```
+brew update && brew upgrade
+brew install pyenv
+```
+
+- pyenvの設定を.bash_profileに追記して反映させます。
+
+```
+echo 'export PYENV_ROOT="${HOME}/.pyenv"' >> ~/.bash_profile
+echo 'export PATH="${PYENV_ROOT}/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+- Anacondaをインストールします。
+
+```
+pyenv install anaconda3-4.2.0
+pyenv global anaconda3-4.2.0
+```
+
+以下のコマンドで`Python 3.5.3 :: Continuum Analytics, Inc.`と表示されれば正しくインストールできています。
+
+```
+python --version
+```
+
+- 開発環境を作りましょう！
+
+AIR-Tutorialという名前の環境を作成します。
+
+```
+conda create -n AIR-Tutorial python=3.5
+```
+
+以下のコマンドでAIR-Tutorial環境が作成できたことが確認できます。
+
+```
+conda info -e
+```
+
+- 作成した開発環境を起動しましょう。
+
+```
+echo 'alias activate="source $PYENV_ROOT/versions/anaconda3-4.2.0/bin/activate"' >> ~/.bashrc
+source ~/.bashrc
+activate AIR-Tutorial
+```
+左側に（AIR-Tutorial）と出てくれば、環境を起動できています。この環境にライブラリをインストールしていきましょう。
+
+- Tensorflowをインストールします。
+
+CPUのみの場合：
+
+```
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.1-py3-none-any.whl
+```
+
+GPUありの場合：
+
+```
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.0.1-py3-none-any.whl
+```
+
+- その他必要なライブラリをインストールしましょう。
+
+```
+conda install -c https://conda.anaconda.org/menpo opencv3
+conda install scipy
+conda install h5py
+pip install matplotlib
+pip install keras 
+```
+
+お疲れ様です！
+それではチュートリアルを始めましょう！
+
+
 ## Ubuntu・・・作成中
