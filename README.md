@@ -63,9 +63,9 @@ https://developer.nvidia.com/cudnn
 
 ダウンロードしたファイルには、cudnn64_5.dll,cudnn.h,cudnn.libが入っていますので、所定の位置に移動させます。
 
-* cudnn64_5.dll →　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bi
+* cudnn64_5.dll →　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin
 * cudnn.h　→　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include
-* cudnn.lib　→　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x6
+* cudnn.lib　→　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64
 
 これでGPUを活用する準備ができました。作成した環境を起動しましょう！以下のコードを実行してください。
 
