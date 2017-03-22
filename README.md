@@ -41,5 +41,58 @@ pip install keras
 
 
 ## Windows(GPUも活用する場合:NVIDIAのGPUを想定しています）・・・作成中
+
+* Anacondaを用いて、開発環境を作成します。以下のURLからWindows向けPython３の最新パッケージをインストールしてください。
+
+https://www.continuum.io/downloads
+
+* WindowsのPowershell、もしくはコマンドプロンプトから以下のコードを実行してください。（本チュートリアルではAIR-Tutorial-gpuという名前の環境を作成します）
+
+```
+conda create -n AIR-Tutorial-gpu python=3.5
+```
+
+GPUを活用するために、CUDA Toolkitをインストールします。以下のURLからWindows向けのツールキットをインストールしてください。
+
+https://developer.nvidia.com/cuda-downloads
+
+Deep Learningを高速化するためのライブラリであるcuDNN5.1もダウンロードします。以下のURLからダウンロードしてください。cuDNNはダウンロードに登録（無料）が必要ですので、忘れず！
+
+https://developer.nvidia.com/cudnn 
+
+
+ダウンロードしたファイルには、cudnn64_5.dll,cudnn.h,cudnn.libが入っていますので、所定の位置に移動させます。
+
+* cudnn64_5.dll →　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bi
+* cudnn.h　→　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include
+* cudnn.lib　→　C:\ProgramFiles\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x6
+
+これでGPUを活用する準備ができました。作成した環境を起動しましょう！以下のコードを実行してください。
+
+```
+activate AIR-Tutorial
+```
+
+左側に（AIR-Tutorial-gpu）と出てくれば、環境を起動できています。この環境にライブラリをインストールしていきましょう。以下のコードを入力してください。
+
+```
+pip install tensorflow-gpu
+conda install -c https://conda.anaconda.org/menpo opencv3
+conda install scipy
+conda install h5py
+pip install matplotlib
+pip install keras 
+```
+以上でインストールは完了です。GPUが動いているかを確認するために、以下のコードを入力して起動時にGPUを立ち上げているかを確認しましょう。
+
+```
+python　　#pythonを起動してください
+>>>import keras 　　　　#kerasをimportします
+```
+
+
+
+
+
 ## Mac・・・作成中
 ## Ubuntu・・・作成中
