@@ -34,6 +34,7 @@ conda install -c https://conda.anaconda.org/menpo opencv3
 conda install scipy
 conda install h5py
 pip install matplotlib
+pip install pillow
 pip install keras 
 ```
 
@@ -81,6 +82,7 @@ conda install -c https://conda.anaconda.org/menpo opencv3
 conda install scipy
 conda install h5py
 pip install matplotlib
+pip install pillow
 pip install keras 
 ```
 以上でインストールは完了です。GPUが動いているかを確認するために、以下のコードを入力して起動時にGPUを立ち上げているかを確認しましょう。
@@ -191,6 +193,7 @@ conda install -c https://conda.anaconda.org/menpo opencv3
 conda install scipy
 conda install h5py
 pip install matplotlib
+pip install pillow
 pip install keras 
 ```
 
